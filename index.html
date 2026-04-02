@@ -681,7 +681,41 @@ nav a:hover {
   .final-stats { gap: 30px; flex-wrap: wrap; }
   .trabaja-card { flex-direction: column; border-radius: 20px; padding: 20px; }
   .trabaja-card img { width: 100%; }
-  header { padding: 15px 20px; flex-direction: column; gap: 10px; }
+
+}
+header {
+  display: flex;
+  justify-content: space-between; /* Separa el título del menú en PC */
+  align-items: center;
+  padding: 15px 5%;
+  flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+}
+
+nav {
+  display: flex;
+  gap: 15px; /* Espacio entre enlaces */
+  align-items: center;
+}
+
+/* ESTILOS PARA MÓVIL (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Alinea título y menú uno arriba del otro */
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column; /* Alinea los enlaces en lista vertical */
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .btn-contacto {
+    width: 100%; /* El botón ocupa todo el ancho en móvil */
+    text-align: center;
+    order: 5; /* Asegura que el botón siempre sea el último */
+  }
 }
 </style>
 </head>
@@ -695,7 +729,7 @@ nav a:hover {
     <a href="#">Eventos</a>
     <a href="#">Servicios</a>
     <a href="#">Blog</a>
-    <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+estoy+visitando+tu+web+y+me+gustar%C3%ADa+solicitar+informaci%C3%B3n+del+mundo+del+anfitronaje+y+tambien+para+contratar+anfitrionas.&type=phone_number&app_absent=0" target="_blank">Contacto</a>
+    <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+visitando+tu+web+y+me+gustar%C3%ADa+solicitar+informaci%C3%B3n+del+mundo+del+anfitronaje+y+tambien+para+contratar+anfitrionas.&type=phone_number&app_absent=0" target="_blank">Contacto</a>
   </nav>
 </header>
 
@@ -773,7 +807,7 @@ nav a:hover {
       <h3>TRABAJO DE ANFITRIONAS</h3>
       <div class="separator"></div>
       <p>Quieres unirte a nuestro equipo de Anfitrionas en Huanuco</p>
-      <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+estoy+interesada+en+el+trabajo+de+anfitriona+en+Huanuco." class="btn-empleo" target="_blank">SOLICITAR EMPLEO</a>
+      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+interesada+en+el+trabajo+de+anfitriona+en+Huanuco." class="btn-empleo" target="_blank">SOLICITAR EMPLEO</a>
     </div>
   </div>
 </section>
@@ -782,7 +816,7 @@ nav a:hover {
   <div class="new-promo-info">
     <h2>SERVICIO GARANTIZADO</h2>
     <p>Contamos con 10 años de experiencia trabajando en los mejores eventos con anfitrionas y modelos brindando un buen servicio.</p>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+información+sobre+el+servicio+garantizado." class="btn-ws-click" target="_blank">CLICK AQUÍ</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+información+sobre+el+servicio+garantizado." class="btn-ws-click" target="_blank">CLICK AQUÍ</a>
   </div>
   <div class="new-video-box">
     <video autoplay muted loop playsinline>
@@ -796,22 +830,22 @@ nav a:hover {
   <div class="gallery-item">
     <img src="src/galeria-05.jpeg" alt="Supermercados">
     <p>Anfitrionas Supermercados</p>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
     <img src="src/servicio-anfitrionas.jpeg" alt="Autos">
     <p>Anfitrionas Eventos Autos</p>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
     <img src="src/galeria-08.jpeg" alt="Privados">
     <p>Anfitrionas Eventos Privados</p>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
     <img src="src/galeria-06.jpeg" alt="Extranjeras">
     <p>Anfitrionas Extranjeras</p>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
 </section>
 
@@ -883,7 +917,7 @@ nav a:hover {
     <div class="icon-box"><i class="fa-solid fa-handshake"></i><p>Compromiso</p></div>
     <div class="icon-box"><i class="fa-solid fa-stopwatch-20"></i><p>Puntualidad</p></div>
   </div>
-  <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+contratar+anfitrionas." class="btn-contratar" target="_blank">CONTRATAR ANFITRIONAS <i class="fa-solid fa-magnifying-glass"></i></a>
+  <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+contratar+anfitrionas." class="btn-contratar" target="_blank">CONTRATAR ANFITRIONAS <i class="fa-solid fa-magnifying-glass"></i></a>
 </section>
 
 <section class="trabaja-box-section">
@@ -892,7 +926,7 @@ nav a:hover {
     <div class="trabaja-content">
       <h2>TRABAJA CON NOSOTRAS</h2>
       <p>¿Te gustaría conocer más sobre nuestras talentosas anfitrionas en Huanuco? Estamos disponibles para responder todas tus consultas y proporcionarte información detallada sobre nuestros servicios y oportunidades. No dudes en preguntar acerca de requisitos, beneficios y cómo puedes unirte a nuestro equipo. ¡Estamos aquí para ayudarte a tomar la mejor decisión!</p>
-      <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+unirme+a+su+equipo+de+anfitrionas." class="btn-click-aqui" target="_blank"><i class="fa-brands fa-whatsapp"></i> CLICK AQUÍ</a>
+      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+unirme+a+su+equipo+de+anfitrionas." class="btn-click-aqui" target="_blank"><i class="fa-brands fa-whatsapp"></i> CLICK AQUÍ</a>
     </div>
   </div>
 </section>
@@ -911,7 +945,7 @@ nav a:hover {
   <div class="social-icons">
     <a href="https://www.facebook.com/share/14ViWfy9pLK/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/lucedy3516?igsh=ZXpkeXpwNzJsZXVv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+te+contacto+desde+la+web." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+te+contacto+desde+la+web." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     <a href="mailto:vanessavalenzuela309@gmail.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
 
@@ -930,7 +964,7 @@ nav a:hover {
   </div>
 </footer>
 
-<a href="https://api.whatsapp.com/send?phone=51942237295&text=%C2%A1Hola!%2C%20estoy%20visitando%20tu%20p%C3%A1gina%20web.%0AMe%20interesar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20trabajo."
+<a href="https://api.whatsapp.com/send?phone=51954160517&text=%C2%A1Hola!%2C%20estoy%20visitando%20tu%20p%C3%A1gina%20web.%0AMe%20interesar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20trabajo."
    class="btn-wa-float"
    target="_blank">
    <i class="fa-brands fa-whatsapp"></i> ¿Cómo puedo ayudarte?
@@ -982,7 +1016,7 @@ nav a:hover {
         return;
     }
 
-    const miNumero = "51942237295";
+    const miNumero = "51954160517";
     const textoWA = `*NUEVA COTIZACIÓN WEB*%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Email:* ${email}%0A*Evento:* ${mensaje}`;
     const urlWA = `https://api.whatsapp.com/send?phone=${miNumero}&text=${textoWA}`;
 

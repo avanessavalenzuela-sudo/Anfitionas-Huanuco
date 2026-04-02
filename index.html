@@ -11,19 +11,18 @@
 <style>
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   
-  /* CAMBIO: Ruta de imagen corregida. Asegúrate de que la imagen esté en la misma carpeta */
-  background-image: url("fondo_v_and_d.jpeg"); 
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-image: url("src/logo-vyd-banner.jpeg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Mantiene el fondo quieto al hacer scroll */
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
 /* --- HEADER ORIGINAL CON TRANSPARENCIA --- */
 header {
-  background: rgba(0, 0, 0, 0.85); /* Un poco de transparencia para ver el fondo */
+  background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 15px 50px;
   display: flex;
@@ -51,8 +50,7 @@ nav a {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  /* Ruta original del usuario - mantenida */
-  background: url("c:\\Users\\ASUS\\Desktop\\WhatsApp Image 2026-03-31 at 6.13.49 PM.jpeg") no-repeat center;
+  background: url("src/logo-vyd-banner2.jpeg") no-repeat center;
   background-size: cover;
 }
 
@@ -117,7 +115,7 @@ nav a {
 
 /* --- SECTION TRANSICIÓN CON TRANSPARENCIA --- */
 .section-desc {
-  background: rgba(255, 15, 79, 0.9); /* Transparencia para integrar el fondo */
+  background: rgba(255, 15, 79, 0.9);
   color: white;
   text-align: center;
   padding: 40px;
@@ -127,7 +125,7 @@ nav a {
 .staff-section {
   text-align: center;
   padding: 60px 5%;
-  background-color: rgba(248, 248, 248, 0.7); /* Transparencia para ver el fondo */
+  background-color: rgba(248, 248, 248, 0.7);
 }
 
 .staff-title {
@@ -163,7 +161,7 @@ nav a {
 
 .card-img-container {
   width: 100%;
-  height: 400px; 
+  height: 400px;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -172,7 +170,7 @@ nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; 
+  object-position: top;
   border: 2px solid white;
 }
 
@@ -255,17 +253,17 @@ nav a {
   font-weight: 800;
   margin-top: 15px;
 }
-.new-video-box { 
-  flex: 1; 
-  min-width: 300px; 
-  max-width: 500px; 
+.new-video-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
   border: 4px solid white;
-  background: black; 
+  background: black;
 }
 
-.new-video-box video { 
-  width: 100%; 
-  display: block; 
+.new-video-box video {
+  width: 100%;
+  display: block;
 }
 
 /* --- GALLERY CON TRANSPARENCIA --- */
@@ -274,7 +272,7 @@ nav a {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 40px 5%;
-  background: rgba(255, 255, 255, 0.6); /* Transparentado para ver fondo */
+  background: rgba(255, 255, 255, 0.6);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -300,12 +298,12 @@ nav a {
   text-align: center;
   background: rgba(255, 255, 255, 0.4);
 }
-.final-stats h2 { 
-  color: #ff0f4f; 
-  font-size: 3.5rem; 
-  margin: 0; 
-  font-weight: 800; 
-  min-width: 150px; 
+.final-stats h2 {
+  color: #ff0f4f;
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 800;
+  min-width: 150px;
 }
 .final-stats p { color: #000; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-top: 5px;}
 
@@ -317,12 +315,12 @@ nav a {
   padding: 0 10% 50px 10%;
   background: rgba(255, 255, 255, 0.4);
 }
-.final-mosaic img { 
-  width: 100%; 
-  height: 260px; 
-  object-fit: cover; 
-  object-position: center; 
-  border-radius: 10px; 
+.final-mosaic img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
 }
 
 /* --- SECCIONES AGREGADAS --- */
@@ -524,11 +522,166 @@ footer {
   z-index: 9999;
 }
 
+/* === INTERACTIVIDAD: HOVER + ZOOM EN BOTONES === */
+.btn-contacto,
+.btn-empleo,
+.btn-ws-click,
+.btn-mas-info,
+.btn-contratar,
+.btn-click-aqui,
+.btn-wa-float,
+.form-box button {
+  transition: all 0.3s ease;
+}
+
+.btn-contacto:hover { background: #d4003c; transform: scale(1.08); box-shadow: 0 5px 20px rgba(255,15,79,0.4); }
+.form-box button:hover { background: #d4003c; transform: scale(1.05); box-shadow: 0 5px 20px rgba(255,15,79,0.4); }
+.btn-empleo:hover { background: #ff0f4f; color: white; transform: scale(1.08); }
+.btn-ws-click:hover { background: #ff0f4f; color: white; transform: scale(1.08); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+.btn-mas-info:hover { background: #d4003c; transform: scale(1.1); box-shadow: 0 5px 15px rgba(255,0,84,0.4); }
+.btn-contratar:hover { background: #d4003c; transform: scale(1.08); box-shadow: 0 8px 25px rgba(255,15,79,0.4); }
+.btn-click-aqui:hover { background: #ff0f4f; color: white; transform: scale(1.08); }
+.btn-wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+
+/* === INTERACTIVIDAD: REDES SOCIALES (fondo rosado) === */
+.social-icons i {
+  transition: all 0.3s ease;
+}
+.social-icons a:hover i {
+  background: #ff0f4f;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(255,15,79,0.5);
+}
+
+/* === INTERACTIVIDAD: NAV LINKS === */
+nav a {
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #ff0f4f;
+  transform: scale(1.05);
+}
+.footer-nav a {
+  transition: all 0.3s ease;
+}
+.footer-nav a:hover {
+  color: #ff0f4f;
+}
+
+/* === INTERACTIVIDAD: CARDS STAFF - ZOOM === */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+.card img {
+  transition: transform 0.5s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* === INTERACTIVIDAD: GALLERY ITEMS - ZOOM + CURSOR === */
+.gallery-item img {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* === INTERACTIVIDAD: MOSAIC - ZOOM === */
+.final-mosaic img {
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.final-mosaic img:hover {
+  transform: scale(1.05);
+}
+
+/* === INTERACTIVIDAD: CLIENTES LOGOS === */
+.clients-grid-new img {
+  transition: all 0.3s ease;
+  filter: grayscale(80%);
+  opacity: 0.6;
+}
+.clients-grid-new img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* === INTERACTIVIDAD: ICONOS PILARES === */
+.icon-box {
+  transition: transform 0.3s ease;
+}
+.icon-box:hover {
+  transform: translateY(-8px) scale(1.1);
+}
+.icon-box:hover i {
+  color: #ff0f4f;
+  transition: color 0.3s ease;
+}
+
+/* === INTERACTIVIDAD: TRABAJA CARD IMAGE === */
+.trabaja-card img {
+  transition: transform 0.4s ease;
+}
+.trabaja-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === LIGHTBOX (galeria ampliada) === */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lightbox-overlay.active {
+  display: flex;
+}
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+  object-fit: contain;
+  animation: zoomIn 0.3s ease;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+.lightbox-close:hover {
+  color: #ff0f4f;
+}
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
 @media (max-width: 900px) {
+  .hero-content { flex-direction: column; text-align: center; }
+  .hero img, .form-box { width: 90% !important; margin-bottom: 20px; }
   .servicios-container, .new-gallery, .final-mosaic, .clients-grid-new { grid-template-columns: repeat(2, 1fr); }
   .final-stats { gap: 30px; flex-wrap: wrap; }
   .trabaja-card { flex-direction: column; border-radius: 20px; padding: 20px; }
   .trabaja-card img { width: 100%; }
+  header { padding: 15px 20px; flex-direction: column; gap: 10px; }
 }
 </style>
 </head>
@@ -548,7 +701,7 @@ footer {
 
 <section class="hero">
   <div class="hero-content">
-    <img src="c:\Users\ASUS\Desktop\76b82236-a2aa-4a95-a463-afa3aa57f535.jpg" alt="modelos">
+    <img src="src/equipo-vyd.jpg" alt="modelos">
     <div class="form-box">
       <h2>ANFITRIONAS Y MODELOS DE HUANUCO</h2>
       <input type="text" id="nombre_cliente" placeholder="Nombres y Apellidos (EMPRESA)">
@@ -572,7 +725,7 @@ footer {
   <div class="servicios-container">
     <div class="card">
       <div class="card-img-container">
-        <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (1).jpeg" alt="Sociales">
+        <img src="src/servicio-anfitrionas.jpeg" alt="Sociales">
       </div>
       <h3>EVENTOS<br>SOCIALES</h3>
       <div class="separator"></div>
@@ -587,7 +740,7 @@ footer {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (2).jpeg" alt="Académicos">
+        <img src="src/galeria-02.jpeg" alt="Académicos">
       </div>
       <h3>EVENTOS<br>ACADÉMICOS</h3>
       <div class="separator"></div>
@@ -601,7 +754,7 @@ footer {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (3).jpeg" alt="MKTG">
+        <img src="src/galeria-03.jpeg" alt="MKTG">
       </div>
       <h3>EVENTOS DE MTKG<br>Y PUBLICIDAD</h3>
       <div class="separator"></div>
@@ -615,7 +768,7 @@ footer {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM.jpeg" alt="Trabajo">
+        <img src="src/modelo-extra-01.jpeg" alt="Trabajo">
       </div>
       <h3>TRABAJO DE ANFITRIONAS</h3>
       <div class="separator"></div>
@@ -633,7 +786,7 @@ footer {
   </div>
   <div class="new-video-box">
     <video autoplay muted loop playsinline>
-      <source src="c:\Users\ASUS\Desktop\WhatsApp Video 2026-04-01 at 5.51.06 PM.mp4" type="video/mp4">
+      <source src="src/video-evento.mp4" type="video/mp4">
       Tu navegador no soporta videos.
     </video>
   </div>
@@ -641,22 +794,22 @@ footer {
 
 <section class="new-gallery">
   <div class="gallery-item">
-    <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 5.34.12 PM (1).jpeg" alt="Supermercados">
+    <img src="src/galeria-05.jpeg" alt="Supermercados">
     <p>Anfitrionas Supermercados</p>
     <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (1).jpeg" alt="Autos">
+    <img src="src/servicio-anfitrionas.jpeg" alt="Autos">
     <p>Anfitrionas Eventos Autos</p>
     <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 5.56.45 PM.jpeg" alt="Privados">
+    <img src="src/galeria-08.jpeg" alt="Privados">
     <p>Anfitrionas Eventos Privados</p>
     <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 5.34.12 PM (2).jpeg" alt="Extranjeras">
+    <img src="src/galeria-06.jpeg" alt="Extranjeras">
     <p>Anfitrionas Extranjeras</p>
     <a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
@@ -678,21 +831,38 @@ footer {
 </section>
 
 <div class="final-mosaic">
-  <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (1).jpeg">
-  <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (2).jpeg">
-  <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM (3).jpeg">
-  <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 3.55.14 PM.jpeg">
+  <img src="src/servicio-anfitrionas.jpeg">
+  <img src="src/galeria-02.jpeg">
+  <img src="src/galeria-03.jpeg">
+  <img src="src/modelo-extra-01.jpeg">
 </div>
 
-<h2 class="final-clientes-title">NUESTROS CLIENTES</h2>
+
+
+<div style="text-align: center; width: 100%; margin: 20px 0;">
+  <h2 class="final-clientes-title" 
+      style="display: inline-block; 
+             background-color: #ff3366; 
+             color: white; 
+             padding: 12px 30px; 
+             border-radius: 50px; 
+             font-family: sans-serif; 
+             text-transform: uppercase; 
+             font-size: 18px; 
+             box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+             cursor: pointer;
+             margin: 2;">
+    NUESTROS CLIENTES
+  </h2>
+</div>
 
 <section class="clients-grid-new">
-  <img src=" src/5854677876601cdfa66b5fbee6801dc7.jpg">
-  <img src="c:\Users\ASUS\Desktop\images (1).jpg">
-  <img src="c:\Users\ASUS\Desktop\ilustracion-tienda-boutique-logo-estampilla-banner_53876-6829.avif">
-  <img src="c:\Users\ASUS\Desktop\9b940ddd5dea523174b466f9f1418e23.jpg">
-  <img src="c:\Users\ASUS\Desktop\593d8c7490f628441a7cf50ba32dde81.png">
-  <img src="c:\Users\ASUS\Desktop\images (2).jpg">
+  <img src="src/cliente-cocacola.png" alt="Coca-Cola">
+  <img src="src/cliente-cervep.png" alt="Cervep">
+  <img src="src/boutique-banner.png" alt="Boutique">
+  <img src="src/cliente-pilsen.png" alt="Pilsen">
+  <img src="src/cliente-puma.png" alt="Coca-Cola">
+  <img src="src/cliente-nike.png" alt="Nike">
 </section>
 
 <section class="pink-info-banner">
@@ -718,7 +888,7 @@ footer {
 
 <section class="trabaja-box-section">
   <div class="trabaja-card">
-    <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-04-01 at 5.56.45 PM.jpeg">
+    <img src="src/galeria-08.jpeg" alt="Trabaja con nosotras">
     <div class="trabaja-content">
       <h2>TRABAJA CON NOSOTRAS</h2>
       <p>¿Te gustaría conocer más sobre nuestras talentosas anfitrionas en Huanuco? Estamos disponibles para responder todas tus consultas y proporcionarte información detallada sobre nuestros servicios y oportunidades. No dudes en preguntar acerca de requisitos, beneficios y cómo puedes unirte a nuestro equipo. ¡Estamos aquí para ayudarte a tomar la mejor decisión!</p>
@@ -747,11 +917,11 @@ footer {
 
   <div class="footer-main">
     <div class="footer-logo">
-      <img src="c:\Users\ASUS\Desktop\WhatsApp Image 2026-03-31 at 6.13.49 PM.jpeg">
+      <img src="src/logo-vyd.jpeg" alt="Logo V&D">
       <h3>ANFITRIONAS<br><small>& ACTIVACIONES</small></h3>
     </div>
     <div class="footer-info">
-      <p><a href="mailto:vanessavalenzuela309@gmail.com" style="color: #bbb; text-decoration: none;"><i class="fa-solid fa-envelope"></i> vanessavalenzuela309@gmail.com</a></p> 
+      <p><a href="mailto:vanessavalenzuela309@gmail.com" style="color: #bbb; text-decoration: none;"><i class="fa-solid fa-envelope"></i> vanessavalenzuela309@gmail.com</a></p>
     </div>
   </div>
 
@@ -760,34 +930,65 @@ footer {
   </div>
 </footer>
 
-<a href="https://api.whatsapp.com/send/?phone=51942237295&text=Hola%2C+estoy+visitando+tu+web+y+me+gustar%C3%ADa+solicitar+informaci%C3%B3n+del+mundo+del+anfitronaje+y+tambien+para+contratar+anfitrionas.&type=phone_number&app_absent=0" 
-   class="btn-wa-float" 
+<a href="https://api.whatsapp.com/send?phone=51942237295&text=%C2%A1Hola!%2C%20estoy%20visitando%20tu%20p%C3%A1gina%20web.%0AMe%20interesar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20trabajo."
+   class="btn-wa-float"
    target="_blank">
-  <i class="fa-brands fa-whatsapp"></i> ¿Cómo puedo ayudarte?
+   <i class="fa-brands fa-whatsapp"></i> ¿Cómo puedo ayudarte?
 </a>
 
+<!-- LIGHTBOX GALERIA -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Vista ampliada">
+</div>
+
 <script>
-  // --- FUNCIÓN DE ENVÍO A WHATSAPP Y CORREO ---
+  // --- LIGHTBOX ---
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // Hacer clickeables todas las imagenes de galeria, mosaic y staff
+  document.addEventListener('DOMContentLoaded', function() {
+    var selectors = '.gallery-item img, .final-mosaic img, .card-img-container img, .trabaja-card img';
+    document.querySelectorAll(selectors).forEach(function(img) {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openLightbox(this.src);
+      });
+    });
+  });
+
+  // --- ENVÍO COTIZACIÓN ---
   function enviarCotizacion() {
     const nombre = document.getElementById('nombre_cliente').value;
     const telefono = document.getElementById('telefono_cliente').value;
     const email = document.getElementById('email_cliente').value;
     const mensaje = document.getElementById('mensaje_cliente').value;
-    
+
     if (nombre === "" || telefono === "") {
         alert("Por favor, ingresa tu nombre y teléfono para contactarte.");
         return;
     }
 
-    // Configuración WhatsApp
     const miNumero = "51942237295";
     const textoWA = `*NUEVA COTIZACIÓN WEB*%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Email:* ${email}%0A*Evento:* ${mensaje}`;
     const urlWA = `https://api.whatsapp.com/send?phone=${miNumero}&text=${textoWA}`;
 
-    // Configuración Envío a Correo (Vía FormSubmit)
     fetch("https://formsubmit.co/ajax/vanessavalenzuela309@gmail.com", {
         method: "POST",
-        headers: { 
+        headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
@@ -800,11 +1001,9 @@ footer {
         })
     });
 
-    // Abrir WhatsApp
     window.open(urlWA, '_blank');
   }
 
-  // --- CONTADORES ORIGINALES ---
   function startInfiniteCounter() {
     const elements = document.querySelectorAll(".num-anim");
     elements.forEach((el) => {

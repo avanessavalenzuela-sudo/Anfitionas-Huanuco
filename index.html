@@ -3,881 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anfitrionas en Huanuco</title>
+<title>Anfitrionas en Huanuco | Agencia de Modelos y Eventos V&D</title>
+<meta name="description" content="Agencia de anfitrionas y modelos en Huanuco, Peru. Staff profesional para eventos corporativos, ferias, activaciones, congresos y mas. 10 anos de experiencia.">
+<meta name="keywords" content="anfitrionas huanuco, modelos huanuco, eventos huanuco, agencia modelos peru, activaciones BTL, staff eventos">
+<link rel="icon" href="src/logo-vyd.jpeg" type="image/jpeg">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<style>
-body {
-  margin: 0;
-  
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  background-image: url("src/logo-vyd-banner.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-/* --- HEADER ORIGINAL CON TRANSPARENCIA --- */
-header {
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 15px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.btn-contacto {
-  background: #ff0f4f;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-/* --- HERO ORIGINAL --- */
-.hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  background: url("src/logo-vyd-banner2.jpeg") no-repeat center;
-  background-size: cover;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-  position: relative;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero img {
-  width: 40%;
-  border-radius: 10px;
-}
-
-.form-box {
-  width: 40%;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.form-box h2 {
-  background: #ff0f4f;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.form-box input, .form-box textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #ff0f4f;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.form-box button {
-  width: 100%;
-  padding: 12px;
-  background: #ff0f4f;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 800;
-}
-
-/* --- SECTION TRANSICIÓN CON TRANSPARENCIA --- */
-.section-desc {
-  background: rgba(255, 15, 79, 0.9);
-  color: white;
-  text-align: center;
-  padding: 40px;
-}
-
-/* --- STAFF SECTION CON TRANSPARENCIA --- */
-.staff-section {
-  text-align: center;
-  padding: 60px 5%;
-  background-color: rgba(248, 248, 248, 0.7);
-}
-
-.staff-title {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.staff-subtitle {
-  color: #333;
-  font-size: 1rem;
-  margin-bottom: 40px;
-  font-weight: 400;
-}
-
-.servicios-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.card {
-  background: #ff0f4f;
-  color: white;
-  border-radius: 2px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.card-img-container {
-  width: 100%;
-  height: 400px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  border: 2px solid white;
-}
-
-.card h3 {
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin: 10px 0;
-  line-height: 1.2;
-}
-
-.separator {
-  margin: 10px auto;
-  width: 80%;
-  height: 1px;
-  background: rgba(255,255,255,0.5);
-  position: relative;
-}
-.separator::after {
-  content: "♦";
-  position: absolute;
-  top: -8px;
-  left: 45%;
-  background: #ff0f4f;
-  padding: 0 5px;
-  font-size: 0.7rem;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.card ul li {
-  font-size: 0.95rem;
-  margin-bottom: 5px;
-  font-weight: 400;
-}
-
-.card p {
-  padding: 0 15px;
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.btn-empleo {
-  display: inline-block;
-  background: white;
-  color: #333;
-  padding: 8px 15px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-/* --- PROMO BLOCK CON TRANSPARENCIA --- */
-.new-promo-block {
-  background-color: rgba(255, 0, 84, 0.9);
-  padding: 40px 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  color: white;
-}
-.new-promo-info { flex: 1; min-width: 300px; text-align: center; }
-.new-promo-info h2 { font-weight: 800; margin-bottom: 15px; font-size: 1.8rem; }
-.btn-ws-click {
-  display: inline-flex;
-  align-items: center;
-  background: white;
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-weight: 800;
-  margin-top: 15px;
-}
-.new-video-box {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  border: 4px solid white;
-  background: black;
-}
-
-.new-video-box video {
-  width: 100%;
-  display: block;
-}
-
-/* --- GALLERY CON TRANSPARENCIA --- */
-.new-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 40px 5%;
-  background: rgba(255, 255, 255, 0.6);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.gallery-item { text-align: center; }
-.gallery-item img { width: 100%; border-radius: 15px; height: 350px; object-fit: cover; }
-.gallery-item p { margin: 10px 0; font-size: 0.85rem; color: #000; font-weight: 700; }
-.btn-mas-info {
-  background: #ff0054;
-  color: white;
-  text-decoration: none;
-  padding: 8px 25px;
-  border-radius: 8px;
-  font-weight: 800;
-  font-size: 0.9rem;
-}
-
-/* --- STATS CON TRANSPARENCIA --- */
-.final-stats {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 60px 5% 30px 5%;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.4);
-}
-.final-stats h2 {
-  color: #ff0f4f;
-  font-size: 3.5rem;
-  margin: 0;
-  font-weight: 800;
-  min-width: 150px;
-}
-.final-stats p { color: #000; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-top: 5px;}
-
-/* --- MOSAIC CON TRANSPARENCIA --- */
-.final-mosaic {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 0 10% 50px 10%;
-  background: rgba(255, 255, 255, 0.4);
-}
-.final-mosaic img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
-}
-
-/* --- SECCIONES AGREGADAS --- */
-
-.final-clientes-title {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-  color: #000;
-  padding-top: 40px;
-}
-
-.clients-grid-new {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
-  padding: 0 10% 60px 10%;
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: center;
-  justify-items: center;
-}
-.clients-grid-new img {
-  max-width: 100px;
-  height: auto;
-  object-fit: contain;
-}
-
-.pink-info-banner {
-  background-color: rgba(255, 15, 79, 0.9);
-  color: white;
-  text-align: center;
-  padding: 60px 10%;
-}
-.pink-info-banner h3 {
-  font-size: 1.1rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-.pink-info-banner p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.pilares-iconos-section {
-  text-align: center;
-  padding: 60px 5% 40px 5%;
-  background: rgba(255, 255, 255, 0.6);
-}
-.pilares-header h2 { font-size: 1.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
-.pilares-header p { color: #000; font-size: 0.95rem; margin-bottom: 50px; }
-.iconos-container { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto 50px auto; }
-.icon-box { flex: 1; min-width: 150px; text-align: center; }
-.icon-box i { font-size: 4rem; color: #000; margin-bottom: 15px; }
-.icon-box p { font-weight: 800; text-transform: uppercase; font-size: 0.85rem; color: #000; }
-.btn-contratar {
-  display: inline-block;
-  background: #ff0f4f;
-  color: white;
-  text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 5px;
-  font-weight: 800;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.trabaja-box-section {
-  padding: 60px 10%;
-  display: flex;
-  justify-content: center;
-}
-
-.trabaja-card {
-  background: rgba(255, 15, 79, 0.95);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  max-width: 1000px;
-  color: white;
-  gap: 40px;
-}
-
-.trabaja-card img {
-  width: 350px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.trabaja-content { text-align: center; }
-.trabaja-content h2 { font-weight: 800; text-transform: uppercase; margin-bottom: 15px; }
-.trabaja-content p { font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px; }
-
-.btn-click-aqui {
-  background: white;
-  color: #000;
-  padding: 10px 25px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* --- FOOTER FINAL --- */
-footer {
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  padding: 60px 10% 20px 10%;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.footer-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.85rem;
-}
-
-.footer-nav .active-link {
-  background: #ff0f4f;
-  padding: 5px 15px;
-  border-radius: 20px;
-}
-
-.footer-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #333;
-  padding-top: 30px;
-}
-
-.footer-logo { display: flex; align-items: center; gap: 15px; }
-.footer-logo img { height: 50px; }
-.footer-logo h3 { font-size: 1.2rem; font-weight: 800; line-height: 1; }
-
-.footer-info { font-size: 0.8rem; color: #bbb; text-align: right; }
-.footer-info p { margin: 5px 0; }
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-.social-icons a {
-  text-decoration: none;
-}
-.social-icons i {
-  font-size: 1.2rem;
-  background: white;
-  color: black;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 0.75rem;
-  color: #666;
-  margin-top: 40px;
-}
-
-.btn-wa-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  z-index: 9999;
-}
-
-/* === INTERACTIVIDAD: HOVER + ZOOM EN BOTONES === */
-.btn-contacto,
-.btn-empleo,
-.btn-ws-click,
-.btn-mas-info,
-.btn-contratar,
-.btn-click-aqui,
-.btn-wa-float,
-.form-box button {
-  transition: all 0.3s ease;
-}
-
-.btn-contacto:hover { background: #d4003c; transform: scale(1.08); box-shadow: 0 5px 20px rgba(255,15,79,0.4); }
-.form-box button:hover { background: #d4003c; transform: scale(1.05); box-shadow: 0 5px 20px rgba(255,15,79,0.4); }
-.btn-empleo:hover { background: #ff0f4f; color: white; transform: scale(1.08); }
-.btn-ws-click:hover { background: #ff0f4f; color: white; transform: scale(1.08); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-.btn-mas-info:hover { background: #d4003c; transform: scale(1.1); box-shadow: 0 5px 15px rgba(255,0,84,0.4); }
-.btn-contratar:hover { background: #d4003c; transform: scale(1.08); box-shadow: 0 8px 25px rgba(255,15,79,0.4); }
-.btn-click-aqui:hover { background: #ff0f4f; color: white; transform: scale(1.08); }
-.btn-wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
-
-/* === INTERACTIVIDAD: REDES SOCIALES (fondo rosado) === */
-.social-icons i {
-  transition: all 0.3s ease;
-}
-.social-icons a:hover i {
-  background: #ff0f4f;
-  color: white;
-  transform: scale(1.2);
-  box-shadow: 0 4px 15px rgba(255,15,79,0.5);
-}
-
-/* === INTERACTIVIDAD: NAV LINKS === */
-nav a {
-  transition: all 0.3s ease;
-}
-nav a:hover {
-  color: #ff0f4f;
-  transform: scale(1.05);
-}
-.footer-nav a {
-  transition: all 0.3s ease;
-}
-.footer-nav a:hover {
-  color: #ff0f4f;
-}
-
-/* === INTERACTIVIDAD: CARDS STAFF - ZOOM === */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-}
-.card img {
-  transition: transform 0.5s ease;
-}
-.card:hover img {
-  transform: scale(1.05);
-}
-
-/* === INTERACTIVIDAD: GALLERY ITEMS - ZOOM + CURSOR === */
-.gallery-item img {
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.gallery-item:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* === INTERACTIVIDAD: MOSAIC - ZOOM === */
-.final-mosaic img {
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-.final-mosaic img:hover {
-  transform: scale(1.05);
-}
-
-/* === INTERACTIVIDAD: CLIENTES LOGOS === */
-.clients-grid-new img {
-  transition: all 0.3s ease;
-  filter: grayscale(80%);
-  opacity: 0.6;
-}
-.clients-grid-new img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.15);
-}
-
-/* === INTERACTIVIDAD: ICONOS PILARES === */
-.icon-box {
-  transition: transform 0.3s ease;
-}
-.icon-box:hover {
-  transform: translateY(-8px) scale(1.1);
-}
-.icon-box:hover i {
-  color: #ff0f4f;
-  transition: color 0.3s ease;
-}
-
-/* === INTERACTIVIDAD: TRABAJA CARD IMAGE === */
-.trabaja-card img {
-  transition: transform 0.4s ease;
-}
-.trabaja-card:hover img {
-  transform: scale(1.05);
-}
-
-/* === LIGHTBOX (galeria ampliada) === */
-.lightbox-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.92);
-  z-index: 10000;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.lightbox-overlay.active {
-  display: flex;
-}
-.lightbox-overlay img {
-  max-width: 90%;
-  max-height: 90vh;
-  border-radius: 10px;
-  object-fit: contain;
-  animation: zoomIn 0.3s ease;
-}
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: white;
-  font-size: 2.5rem;
-  cursor: pointer;
-  transition: color 0.3s;
-  font-weight: bold;
-}
-.lightbox-close:hover {
-  color: #ff0f4f;
-}
-@keyframes zoomIn {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-@media (max-width: 900px) {
-  .hero-content { flex-direction: column; text-align: center; }
-  .hero img, .form-box { width: 90% !important; margin-bottom: 20px; }
-  .servicios-container, .new-gallery, .final-mosaic, .clients-grid-new { grid-template-columns: repeat(2, 1fr); }
-  .final-stats { gap: 30px; flex-wrap: wrap; }
-  .trabaja-card { flex-direction: column; border-radius: 20px; padding: 20px; }
-  .trabaja-card img { width: 100%; }
-
-}
-header {
-  display: flex;
-  justify-content: space-between; /* Separa el título del menú en PC */
-  align-items: center;
-  padding: 15px 5%;
-  flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
-}
-
-nav {
-  display: flex;
-  gap: 15px; /* Espacio entre enlaces */
-  align-items: center;
-}
-
-/* ESTILOS PARA MÓVIL (Pantallas menores a 768px) */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column; /* Alinea título y menú uno arriba del otro */
-    text-align: center;
-  }
-
-  nav {
-    flex-direction: column; /* Alinea los enlaces en lista vertical */
-    width: 100%;
-    margin-top: 15px;
-    gap: 10px;
-  }
-
-  .btn-contacto {
-    width: 100%; /* El botón ocupa todo el ancho en móvil */
-    text-align: center;
-    order: 5; /* Asegura que el botón siempre sea el último */
-  }
-}
-.final-mosaic-container {
-  position: relative;
-  height: 310px;
-  background: rgba(255, 255, 255, 0.4);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-.final-mosaic {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 0 10%;
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  pointer-events: none;
-}
-.final-mosaic.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-.mosaic-item { position: relative; overflow: hidden; border-radius: 10px; }
-.mosaic-item img { width: 100%; height: 260px; object-fit: cover; transition: transform 0.4s ease; }
-.ig-overlay {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(255, 15, 79, 0.7); /* ROSADO */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.ig-overlay i { color: white; font-size: 3rem; }
-.mosaic-item:hover .ig-overlay { opacity: 1; }
-let currentGroup = 0;
-  const groups = document.querySelectorAll('.final-mosaic');
-  function rotateMosaics() {
-    groups[currentGroup].classList.remove('active');
-    currentGroup = (currentGroup + 1) % groups.length;
-    groups[currentGroup].classList.add('active');
-  }
-  setInterval(rotateMosaics, 4000); // Esto hace que cambien cada 4 segundos
-
-<style>
-  /* Contenedor principal */
-  .final-mosaic-container {
-    position: relative;
-    width: 100%;
-    min-height: 300px; /* Ajusta según el alto de tus fotos */
-    overflow: hidden;
-  }
-
-  /* Estilo base de los grupos (ocultos por defecto) */
-  .final-mosaic {
-    display: none; 
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    width: 100%;
-    /* Ajustamos para que las 4 fotos salgan en fila o cuadrícula */
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  /* Cuando el grupo está activo se muestra con suavidad */
-  .final-mosaic.active {
-    display: flex;
-    opacity: 1;
-  }
-
-  /* Estilo para que las imágenes tengan buen tamaño */
-  .mosaic-item {
-    position: relative;
-    width: 200px; /* Ajusta el ancho de tus fotos aquí */
-  }
-
-  .mosaic-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const grupos = document.querySelectorAll('.final-mosaic');
-    let indice = 0;
-
-    function cambiarGrupo() {
-      // 1. Desvanecer el grupo actual
-      grupos[indice].classList.remove('active');
-
-      // Esperar a que termine la animación de opacidad (1s) para cambiar de grupo
-      setTimeout(() => {
-        grupos[indice].style.display = 'none';
-
-        // 2. Pasar al siguiente índice
-        indice = (indice + 1) % grupos.length;
-
-        // 3. Mostrar el nuevo grupo
-        grupos[indice].style.display = 'flex';
-        
-        // Pequeño delay para que el navegador registre el cambio de display y anime la opacidad
-        setTimeout(() => {
-          grupos[indice].classList.add('active');
-        }, 50);
-      }, 1000); 
-    }
-
-    // Cambia cada 4 segundos
-    setInterval(cambiarGrupo, 4000);
-  });
-</script>
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
   <h2>ANFITRIONAS DE HUANUCO</h2>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Eventos</a>
-    <a href="#">Servicios</a>
-    <a href="#">Blog</a>
-    <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+visitando+tu+web+y+me+gustar%C3%ADa+solicitar+informaci%C3%B3n+del+mundo+del+anfitronaje+y+tambien+para+contratar+anfitrionas.&type=phone_number&app_absent=0" target="_blank">Contacto</a>
+  <nav aria-label="Menu principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Eventos</a>
+    <a href="#galeria">Servicios</a>
+    <a href="#pilares">Blog</a>
+    <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+visitando+tu+web+y+me+gustar%C3%ADa+solicitar+informaci%C3%B3n+del+mundo+del+anfitronaje+y+tambien+para+contratar+anfitrionas.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">Contacto</a>
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="inicio">
   <div class="hero-content">
-    <img src="src/equipo-vyd.jpg" alt="modelos">
+    <img src="src/equipo-vyd.jpg" alt="Equipo de anfitrionas y modelos V&D Huanuco">
     <div class="form-box">
       <h2>ANFITRIONAS Y MODELOS DE HUANUCO</h2>
-      <input type="text" id="nombre_cliente" placeholder="Nombres y Apellidos (EMPRESA)">
-      <input type="text" id="telefono_cliente" placeholder="Teléfono">
-      <input type="email" id="email_cliente" placeholder="Email">
-      <textarea rows="4" id="mensaje_cliente" placeholder="Cuéntanos sobre tu evento..."></textarea>
-      <button onclick="enviarCotizacion()">COTIZAR</button>
+      <form id="form-cotizacion">
+        <label for="nombre_cliente">Nombre / Empresa</label>
+        <input type="text" id="nombre_cliente" placeholder="Nombres y Apellidos (EMPRESA)" required>
+        <label for="telefono_cliente">Telefono</label>
+        <input type="tel" id="telefono_cliente" placeholder="Telefono" required>
+        <label for="email_cliente">Email</label>
+        <input type="email" id="email_cliente" placeholder="Email">
+        <label for="mensaje_cliente">Detalles del evento</label>
+        <textarea rows="4" id="mensaje_cliente" placeholder="Cuentanos sobre tu evento..."></textarea>
+        <button type="button" onclick="enviarCotizacion()">COTIZAR</button>
+      </form>
     </div>
   </div>
 </section>
 
 <section class="section-desc">
   <h2>NUESTRA AGENCIA DE ANFITRIONAS EN HUANUCO</h2>
-  <p>Somos líderes en organización y gestión de eventos en Huanuco, Perú.</p>
+  <p>Somos lideres en organizacion y gestion de eventos en Huanuco, Peru.</p>
 </section>
 
-<section class="staff-section">
+<section class="staff-section" id="servicios">
   <h2 class="staff-title">STAFF DE MODELOS Y ANFITRIONAS PROFESIONALES</h2>
-  <p class="staff-subtitle">Contamos con las anfitrionas y modelos más calificadas para diversos tipos de eventos</p>
+  <p class="staff-subtitle">Contamos con las anfitrionas y modelos mas calificadas para diversos tipos de eventos</p>
 
   <div class="servicios-container">
     <div class="card">
       <div class="card-img-container">
-        <img src="src/galeria-02.jpeg" alt="Sociales">
+        <img src="src/galeria-02.jpeg" alt="Anfitrionas para eventos sociales" loading="lazy">
       </div>
       <h3>EVENTOS<br>SOCIALES</h3>
       <div class="separator"></div>
@@ -892,9 +73,9 @@ let currentGroup = 0;
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/galeria-01.jpeg" alt="Académicos">
+        <img src="src/galeria-01.jpeg" alt="Anfitrionas para eventos academicos" loading="lazy">
       </div>
-      <h3>EVENTOS<br>ACADÉMICOS</h3>
+      <h3>EVENTOS<br>ACADEMICOS</h3>
       <div class="separator"></div>
       <ul>
         <li>Congresos</li>
@@ -906,35 +87,35 @@ let currentGroup = 0;
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/FOTOO.jpeg" alt="MKTG">
+        <img src="src/fotoo.jpeg" alt="Anfitrionas para marketing y publicidad" loading="lazy">
       </div>
       <h3>EVENTOS DE MTKG<br>Y PUBLICIDAD</h3>
       <div class="separator"></div>
       <ul>
         <li>Lanzamiento de productos</li>
-        <li>Activaciones, Samplings,</li>
-        <li>Fotografías, Revistas</li>
-        <li>Catálogos</li>
+        <li>Activaciones, Samplings</li>
+        <li>Fotografias, Revistas</li>
+        <li>Catalogos</li>
       </ul>
     </div>
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/FOTO 4.jpeg" alt="Trabajo">
+        <img src="src/foto-04.jpeg" alt="Trabaja como anfitriona en Huanuco" loading="lazy">
       </div>
       <h3>TRABAJO DE ANFITRIONAS</h3>
       <div class="separator"></div>
       <p>Quieres unirte a nuestro equipo de Anfitrionas en Huanuco</p>
-      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+interesada+en+el+trabajo+de+anfitriona+en+Huanuco." class="btn-empleo" target="_blank">SOLICITAR EMPLEO</a>
+      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+estoy+interesada+en+el+trabajo+de+anfitriona+en+Huanuco." class="btn-empleo" target="_blank" rel="noopener noreferrer">SOLICITAR EMPLEO</a>
     </div>
   </div>
 </section>
 
-<section class="new-promo-block">
+<section class="new-promo-block" id="promo">
   <div class="new-promo-info">
     <h2>SERVICIO GARANTIZADO</h2>
-    <p>Contamos con 10 años de experiencia trabajando en los mejores eventos con anfitrionas y modelos brindando un buen servicio.</p>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+información+sobre+el+servicio+garantizado." class="btn-ws-click" target="_blank">CLICK AQUÍ</a>
+    <p>Contamos con 10 anos de experiencia trabajando en los mejores eventos con anfitrionas y modelos brindando un buen servicio.</p>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+informacion+sobre+el+servicio+garantizado." class="btn-ws-click" target="_blank" rel="noopener noreferrer">CLICK AQUI</a>
   </div>
   <div class="new-video-box">
     <video autoplay muted loop playsinline>
@@ -944,26 +125,26 @@ let currentGroup = 0;
   </div>
 </section>
 
-<section class="new-gallery">
+<section class="new-gallery" id="galeria">
   <div class="gallery-item">
-    <img src="src/SUPER.jpeg" alt="Supermercados">
+    <img src="src/super.jpeg" alt="Anfitrionas para supermercados" loading="lazy">
     <p>Anfitrionas Supermercados</p>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank" rel="noopener noreferrer">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/foto 2.jpeg" alt="Autos">
+    <img src="c:\Users\ASUS\Downloads\web-anfitrionas\src\foto-543.jpeg" alt="Anfitrionas para eventos de autos" loading="lazy">
     <p>Anfitrionas Eventos Autos</p>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank" rel="noopener noreferrer">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/FOTO 1.png" alt="Privados">
+    <img src="c:\Users\ASUS\Downloads\web-anfitrionas\src\foto- 787.jpeg" alt="Anfitrionas para eventos privados" loading="lazy">
     <p>Anfitrionas Eventos Privados</p>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank" rel="noopener noreferrer">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/anfitrionas-extranjeras.jpg.jpeg" alt="Extranjeras">
+    <img src="src/anfitrionas-extranjeras.jpeg" alt="Anfitrionas extranjeras" loading="lazy">
     <p>Anfitrionas Extranjeras</p>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank">MAS INFO</a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank" rel="noopener noreferrer">MAS INFO</a>
   </div>
 </section>
 
@@ -982,231 +163,115 @@ let currentGroup = 0;
   </div>
 </section>
 
-<div class="final-mosaic-container">
-  <div class="final-mosaic active" id="grupo-1">
-    <div class="mosaic-item"><img src="src/FOTO 1.png"><a href="https://www.instagram.com/sc.paredes?igsh=MTkzNGM3ajF2NTV4dA==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/foto 2.jpeg"><a href="https://www.instagram.com/lucedy3516" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/foto 3.jpeg"><a href="https://www.instagram.com/claudiacamposvelez?igsh=YTFuNzJzaXlrbTBw" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 4.png"><a href="https://www.instagram.com/shania_fx?igsh=ZmR5eXZvd295NjRu" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-  </div>
-  
-  <div class="final-mosaic" id="grupo-2">
-    <div class="mosaic-item"><img src="src/foto 5.jpeg"><a href="https://www.facebook.com/share/1KakiBaU4K/" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 6.png"><a href="https://www.instagram.com/milagros_b.a?igsh=MW5pczl3ZnZ2ZThlbg==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 7.png"><a href="https://www.instagram.com/emily.celis.165?igsh=MWlhc3hjZ2FnZDl2eA==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 8.png"><a href="https://www.instagram.com/krystell_15?igsh=ajZqcmx5NWQycnd4" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-  </div>
-
-  <div class="final-mosaic" id="grupo-3">
-    <div class="mosaic-item"><img src="src/FOTO 9.png"><a href="https://www.instagram.com/karenpriscilaobregongomez?igsh=bThyMGg1eGxuMGhv" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 10.png"><a href="https://www.instagram.com/fiorecrus?igsh=c3dwcW1yYXY1ODBn" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 11.png"><a href="https://www.instagram.com/karen_carla_sc?igsh=ZXZ5cXZ5MTkwcWM=" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="mosaic-item"><img src="src/FOTO 12.png"><a href="https://www.instagram.com/rouseee_e?igsh=bzRtdTd1OTQ4OGZz" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+<div class="marquee-container">
+  <div class="marquee-track">
+    <div class="marquee-item"><img src="src/foto-01.png" alt="Anfitriona 1" loading="lazy"><a href="https://www.instagram.com/sc.paredes?igsh=MTkzNGM3ajF2NTV4dA==" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-02.jpeg" alt="Anfitriona 2" loading="lazy"><a href="https://www.instagram.com/lucedy3516" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-03.jpeg" alt="Anfitriona 3" loading="lazy"><a href="https://www.instagram.com/claudiacamposvelez?igsh=YTFuNzJzaXlrbTBw" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-04.png" alt="Anfitriona 4" loading="lazy"><a href="https://www.instagram.com/shania_fx?igsh=ZmR5eXZvd295NjRu" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-05.jpeg" alt="Anfitriona 5" loading="lazy"><a href="https://www.facebook.com/share/1KakiBaU4K/" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-06.png" alt="Anfitriona 6" loading="lazy"><a href="https://www.instagram.com/milagros_b.a?igsh=MW5pczl3ZnZ2ZThlbg==" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-07.jpeg" alt="Anfitriona 7" loading="lazy"><a href="https://www.instagram.com/emily.celis.165?igsh=MWlhc3hjZ2FnZDl2eA==" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-08.png" alt="Anfitriona 8" loading="lazy"><a href="https://www.instagram.com/krystell_15?igsh=ajZqcmx5NWQycnd4" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-09.png" alt="Anfitriona 9" loading="lazy"><a href="https://www.instagram.com/karenpriscilaobregongomez?igsh=bThyMGg1eGxuMGhv" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/galeria-12.jpeg" alt="Anfitriona 10" loading="lazy"><a href="https://www.facebook.com/share/1E5b7ovDDP/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="marquee-item"><img src="src/foto-11.png" alt="Anfitriona 11" loading="lazy"><a href="https://www.instagram.com/karen_carla_sc?igsh=ZXZ5cXZ5MTkwcWM=" target="_blank" rel="noopener noreferrer" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
   </div>
 </div>
 
-<div style="text-align: center; width: 100%; margin: 20px 0;">
-  <h2 class="final-clientes-title" 
-      style="display: inline-block; 
-             background-color: #ff3366; 
-             color: white; 
-             padding: 12px 30px; 
-             border-radius: 50px; 
-             font-family: sans-serif; 
-             text-transform: uppercase; 
-             font-size: 18px; 
-             box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
-             cursor: pointer;
-             margin: 2;">
-    NUESTROS CLIENTES
-  </h2>
+<div class="clientes-header">
+  <h2 class="final-clientes-title">NUESTROS CLIENTES</h2>
 </div>
 
 <section class="clients-grid-new">
-  <img src="src/cliente-cocacola.png" alt="Coca-Cola">
-  <img src="src/cliente-cervep.png" alt="Cervep">
-  <img src="src/boutique-banner.png" alt="Boutique">
-  <img src="src/cliente-pilsen.png" alt="Pilsen">
-  <img src="src/cliente-puma.png" alt="Coca-Cola">
-  <img src="src/cliente-nike.png" alt="Nike">
+  <img src="src/cliente-cocacola.png" alt="Cliente Coca-Cola" loading="lazy">
+  <img src="src/cliente-cervep.png" alt="Cliente Cervep" loading="lazy">
+  <img src="src/boutique-banner.png" alt="Cliente Boutique" loading="lazy">
+  <img src="src/cliente-pilsen.png" alt="Cliente Pilsen" loading="lazy">
+  <img src="src/cliente-puma.png" alt="Cliente Puma" loading="lazy">
+  <img src="src/cliente-nike.png" alt="Cliente Nike" loading="lazy">
 </section>
 
 <section class="pink-info-banner">
-  <h3>FERIAS, EVENTOS CORPORATIVOS, ACTIVACIONES, CAMPAÑAS, BTL</h3>
+  <h3>FERIAS, EVENTOS CORPORATIVOS, ACTIVACIONES, CAMPANAS, BTL</h3>
   <p>
-    En nuestra agencia, especializada en eventos en Huanuco, Perú, elevamos el estándar de tus eventos con nuestro staff de anfitrionas y modelos de primer nivel. Contamos con una amplia experiencia trabajando en diversos tipos de eventos, desde corporativos hasta promocionales.
+    En nuestra agencia, especializada en eventos en Huanuco, Peru, elevamos el estandar de tus eventos con nuestro staff de anfitrionas y modelos de primer nivel. Contamos con una amplia experiencia trabajando en diversos tipos de eventos, desde corporativos hasta promocionales.
   </p>
 </section>
 
-<section class="pilares-iconos-section">
+<section class="pilares-iconos-section" id="pilares">
   <div class="pilares-header">
     <h2>NUESTROS PILARES</h2>
-    <p>Contamos con las anfitrionas y modelos más calificadas para diversos tipos de eventos</p>
+    <p>Contamos con las anfitrionas y modelos mas calificadas para diversos tipos de eventos</p>
   </div>
   <div class="iconos-container">
-    <div class="icon-box"><i class="fa-solid fa-person-dress"></i><p>Presencia</p></div>
-    <div class="icon-box"><i class="fa-solid fa-bullseye"></i><p>Eficiencia</p></div>
-    <div class="icon-box"><i class="fa-solid fa-handshake"></i><p>Compromiso</p></div>
-    <div class="icon-box"><i class="fa-solid fa-stopwatch-20"></i><p>Puntualidad</p></div>
+    <div class="icon-box"><i class="fa-solid fa-person-dress" aria-hidden="true"></i><p>Presencia</p></div>
+    <div class="icon-box"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><p>Eficiencia</p></div>
+    <div class="icon-box"><i class="fa-solid fa-handshake" aria-hidden="true"></i><p>Compromiso</p></div>
+    <div class="icon-box"><i class="fa-solid fa-stopwatch-20" aria-hidden="true"></i><p>Puntualidad</p></div>
   </div>
-  <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+contratar+anfitrionas." class="btn-contratar" target="_blank">CONTRATAR ANFITRIONAS <i class="fa-solid fa-magnifying-glass"></i></a>
+  <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+contratar+anfitrionas." class="btn-contratar" target="_blank" rel="noopener noreferrer">CONTRATAR ANFITRIONAS <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a>
 </section>
 
 <section class="trabaja-box-section">
   <div class="trabaja-card">
-    <img src="src/FOTO 1.png" alt="Trabaja con nosotras">
+    <img src="c:\Users\ASUS\Downloads\web-anfitrionas\src\foto-90.jpeg" alt="Unete a nuestro equipo de anfitrionas" loading="lazy">
     <div class="trabaja-content">
       <h2>TRABAJA CON NOSOTRAS</h2>
-      <p>¿Te gustaría conocer más sobre nuestras talentosas anfitrionas en Huanuco? Estamos disponibles para responder todas tus consultas y proporcionarte información detallada sobre nuestros servicios y oportunidades. No dudes en preguntar acerca de requisitos, beneficios y cómo puedes unirte a nuestro equipo. ¡Estamos aquí para ayudarte a tomar la mejor decisión!</p>
-      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+unirme+a+su+equipo+de+anfitrionas." class="btn-click-aqui" target="_blank"><i class="fa-brands fa-whatsapp"></i> CLICK AQUÍ</a>
+      <p>Te gustaria conocer mas sobre nuestras talentosas anfitrionas en Huanuco? Estamos disponibles para responder todas tus consultas y proporcionarte informacion detallada sobre nuestros servicios y oportunidades. No dudes en preguntar acerca de requisitos, beneficios y como puedes unirte a nuestro equipo. Estamos aqui para ayudarte a tomar la mejor decision!</p>
+      <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+unirme+a+su+equipo+de+anfitrionas." class="btn-click-aqui" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> CLICK AQUI</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-nav">
-    <a href="#">ANFITRIONAS</a>
-    <a href="#">EVENTOS</a>
-    <a href="#" class="active-link">NUESTROS SERVICIOS</a>
-    <a href="#">NUESTRA AGENCIA</a>
-    <a href="#">CASTING</a>
-    <a href="#">BLOG</a>
-    <a href="#">ANFITRIONAS B</a>
-  </div>
+  <nav class="footer-nav" aria-label="Menu del footer">
+    <a href="#servicios">ANFITRIONAS</a>
+    <a href="#promo">EVENTOS</a>
+    <a href="#galeria" class="active-link">NUESTROS SERVICIOS</a>
+    <a href="#inicio">NUESTRA AGENCIA</a>
+    <a href="#servicios">CASTING</a>
+    <a href="#pilares">BLOG</a>
+    <a href="#galeria">ANFITRIONAS B</a>
+  </nav>
 
-<div class="social-icons">
-    <a href="https://www.facebook.com/share/14ViWfy9pLK/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/lucedy3516?igsh=ZXpkeXpwNzJsZXVv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@avilavaleria8?_r=1&_t=ZS-95HR7EocB65" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+te+contacto+desde+la+web." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="mailto:vanessavalenzuela309@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/14ViWfy9pLK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/lucedy3516?igsh=ZXpkeXpwNzJsZXVv" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.tiktok.com/@avilavaleria8?_r=1&_t=ZS-95HR7EocB65" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+    <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+te+contacto+desde+la+web." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="mailto:vanessavalenzuela309@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+  </div>
 
   <div class="footer-main">
     <div class="footer-logo">
-      <img src="src/logo-vyd.jpeg" alt="Logo V&D">
+      <img src="src/logo-vyd.jpeg" alt="Logo V&D Anfitrionas">
       <h3>ANFITRIONAS<br><small>& ACTIVACIONES</small></h3>
     </div>
     <div class="footer-info">
-      <p><a href="mailto:vanessavalenzuela309@gmail.com" style="color: #bbb; text-decoration: none;"><i class="fa-solid fa-envelope"></i> vanessavalenzuela309@gmail.com</a></p>
+      <p><a href="mailto:vanessavalenzuela309@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> vanessavalenzuela309@gmail.com</a></p>
     </div>
   </div>
 
   <div class="copyright">
-    Copyright © 2026 | Agencia SEO en Huanuco Sin Floro
+    Copyright &copy; 2026 | Agencia SEO en Huanuco Sin Floro
   </div>
 </footer>
 
 <a href="https://api.whatsapp.com/send?phone=51954160517&text=%C2%A1Hola!%2C%20estoy%20visitando%20tu%20p%C3%A1gina%20web.%0AMe%20interesar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20trabajo."
    class="btn-wa-float"
-   target="_blank">
-   <i class="fa-brands fa-whatsapp"></i> ¿Cómo puedo ayudarte?
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Como puedo ayudarte?
 </a>
 
 <!-- LIGHTBOX GALERIA -->
-<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()" role="dialog" aria-label="Vista ampliada de imagen">
+  <span class="lightbox-close" aria-label="Cerrar">&times;</span>
   <img id="lightbox-img" src="" alt="Vista ampliada">
 </div>
 
-<script>
-  // --- LIGHTBOX ---
-  function openLightbox(src) {
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeLightbox();
-  });
-
-  // Hacer clickeables todas las imagenes de galeria, mosaic y staff
-  document.addEventListener('DOMContentLoaded', function() {
-    var selectors = '.gallery-item img, .final-mosaic img, .card-img-container img, .trabaja-card img';
-    document.querySelectorAll(selectors).forEach(function(img) {
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        openLightbox(this.src);
-      });
-    });
-  });
-
-  // --- ENVÍO COTIZACIÓN ---
-  function enviarCotizacion() {
-    const nombre = document.getElementById('nombre_cliente').value;
-    const telefono = document.getElementById('telefono_cliente').value;
-    const email = document.getElementById('email_cliente').value;
-    const mensaje = document.getElementById('mensaje_cliente').value;
-
-    if (nombre === "" || telefono === "") {
-        alert("Por favor, ingresa tu nombre y teléfono para contactarte.");
-        return;
-    }
-
-    const miNumero = "51954160517";
-    const textoWA = `*NUEVA COTIZACIÓN WEB*%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Email:* ${email}%0A*Evento:* ${mensaje}`;
-    const urlWA = `https://api.whatsapp.com/send?phone=${miNumero}&text=${textoWA}`;
-
-    fetch("https://formsubmit.co/ajax/vanessavalenzuela309@gmail.com", {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            Empresa_Nombre: nombre,
-            Telefono: telefono,
-            Email: email,
-            Detalles_Evento: mensaje,
-            _subject: "NUEVA COTIZACIÓN DESDE LA WEB"
-        })
-    });
-
-    window.open(urlWA, '_blank');
-  }
-
-  function startInfiniteCounter() {
-    const elements = document.querySelectorAll(".num-anim");
-    elements.forEach((el) => {
-      const endValue = parseInt(el.getAttribute("data-val"));
-      const suffix = el.getAttribute("data-suffix") || "";
-      let startValue = 0;
-      const duration = 2000;
-      const stepTime = duration / endValue;
-      const counter = setInterval(() => {
-        startValue++;
-        el.textContent = startValue + suffix;
-        if (startValue === endValue) {
-          clearInterval(counter);
-          setTimeout(() => { el.textContent = "0"; restartIndividual(el); }, 3000);
-        }
-      }, stepTime);
-    });
-  }
-
-  function restartIndividual(el) {
-    const endValue = parseInt(el.getAttribute("data-val"));
-    const suffix = el.getAttribute("data-suffix") || "";
-    let startValue = 0;
-    const duration = 2000;
-    const stepTime = duration / endValue;
-    const counter = setInterval(() => {
-      startValue++;
-      el.textContent = startValue + suffix;
-      if (startValue === endValue) {
-        clearInterval(counter);
-        setTimeout(() => { el.textContent = "0"; restartIndividual(el); }, 3000);
-      }
-    }, stepTime);
-  }
-  window.onload = startInfiniteCounter;
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>

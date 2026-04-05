@@ -717,6 +717,124 @@ nav {
     order: 5; /* Asegura que el botón siempre sea el último */
   }
 }
+.final-mosaic-container {
+  position: relative;
+  height: 310px;
+  background: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.final-mosaic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 0 10%;
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+.final-mosaic.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mosaic-item { position: relative; overflow: hidden; border-radius: 10px; }
+.mosaic-item img { width: 100%; height: 260px; object-fit: cover; transition: transform 0.4s ease; }
+.ig-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255, 15, 79, 0.7); /* ROSADO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.ig-overlay i { color: white; font-size: 3rem; }
+.mosaic-item:hover .ig-overlay { opacity: 1; }
+let currentGroup = 0;
+  const groups = document.querySelectorAll('.final-mosaic');
+  function rotateMosaics() {
+    groups[currentGroup].classList.remove('active');
+    currentGroup = (currentGroup + 1) % groups.length;
+    groups[currentGroup].classList.add('active');
+  }
+  setInterval(rotateMosaics, 4000); // Esto hace que cambien cada 4 segundos
+
+<style>
+  /* Contenedor principal */
+  .final-mosaic-container {
+    position: relative;
+    width: 100%;
+    min-height: 300px; /* Ajusta según el alto de tus fotos */
+    overflow: hidden;
+  }
+
+  /* Estilo base de los grupos (ocultos por defecto) */
+  .final-mosaic {
+    display: none; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    /* Ajustamos para que las 4 fotos salgan en fila o cuadrícula */
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  /* Cuando el grupo está activo se muestra con suavidad */
+  .final-mosaic.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  /* Estilo para que las imágenes tengan buen tamaño */
+  .mosaic-item {
+    position: relative;
+    width: 200px; /* Ajusta el ancho de tus fotos aquí */
+  }
+
+  .mosaic-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const grupos = document.querySelectorAll('.final-mosaic');
+    let indice = 0;
+
+    function cambiarGrupo() {
+      // 1. Desvanecer el grupo actual
+      grupos[indice].classList.remove('active');
+
+      // Esperar a que termine la animación de opacidad (1s) para cambiar de grupo
+      setTimeout(() => {
+        grupos[indice].style.display = 'none';
+
+        // 2. Pasar al siguiente índice
+        indice = (indice + 1) % grupos.length;
+
+        // 3. Mostrar el nuevo grupo
+        grupos[indice].style.display = 'flex';
+        
+        // Pequeño delay para que el navegador registre el cambio de display y anime la opacidad
+        setTimeout(() => {
+          grupos[indice].classList.add('active');
+        }, 50);
+      }, 1000); 
+    }
+
+    // Cambia cada 4 segundos
+    setInterval(cambiarGrupo, 4000);
+  });
+</script>
 </style>
 </head>
 
@@ -759,7 +877,7 @@ nav {
   <div class="servicios-container">
     <div class="card">
       <div class="card-img-container">
-        <img src="src/servicio-anfitrionas.jpeg" alt="Sociales">
+        <img src="src/galeria-02.jpeg" alt="Sociales">
       </div>
       <h3>EVENTOS<br>SOCIALES</h3>
       <div class="separator"></div>
@@ -774,7 +892,7 @@ nav {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/galeria-02.jpeg" alt="Académicos">
+        <img src="src/galeria-01.jpeg" alt="Académicos">
       </div>
       <h3>EVENTOS<br>ACADÉMICOS</h3>
       <div class="separator"></div>
@@ -788,7 +906,7 @@ nav {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/galeria-03.jpeg" alt="MKTG">
+        <img src="src/FOTOO.jpeg" alt="MKTG">
       </div>
       <h3>EVENTOS DE MTKG<br>Y PUBLICIDAD</h3>
       <div class="separator"></div>
@@ -802,7 +920,7 @@ nav {
 
     <div class="card">
       <div class="card-img-container">
-        <img src="src/modelo-extra-01.jpeg" alt="Trabajo">
+        <img src="src/FOTO 4.jpeg" alt="Trabajo">
       </div>
       <h3>TRABAJO DE ANFITRIONAS</h3>
       <div class="separator"></div>
@@ -828,22 +946,22 @@ nav {
 
 <section class="new-gallery">
   <div class="gallery-item">
-    <img src="src/galeria-05.jpeg" alt="Supermercados">
+    <img src="src/SUPER.jpeg" alt="Supermercados">
     <p>Anfitrionas Supermercados</p>
     <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Supermercados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/servicio-anfitrionas.jpeg" alt="Autos">
+    <img src="src/foto 2.jpeg" alt="Autos">
     <p>Anfitrionas Eventos Autos</p>
     <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Autos." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/galeria-08.jpeg" alt="Privados">
+    <img src="src/FOTO 1.png" alt="Privados">
     <p>Anfitrionas Eventos Privados</p>
     <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+para+Eventos+Privados." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
   <div class="gallery-item">
-    <img src="src/galeria-06.jpeg" alt="Extranjeras">
+    <img src="src/anfitrionas-extranjeras.jpg.jpeg" alt="Extranjeras">
     <p>Anfitrionas Extranjeras</p>
     <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+quiero+info+sobre+Anfitrionas+Extranjeras." class="btn-mas-info" target="_blank">MAS INFO</a>
   </div>
@@ -864,14 +982,28 @@ nav {
   </div>
 </section>
 
-<div class="final-mosaic">
-  <img src="src/servicio-anfitrionas.jpeg">
-  <img src="src/galeria-02.jpeg">
-  <img src="src/galeria-03.jpeg">
-  <img src="src/modelo-extra-01.jpeg">
+<div class="final-mosaic-container">
+  <div class="final-mosaic active" id="grupo-1">
+    <div class="mosaic-item"><img src="src/FOTO 1.png"><a href="https://www.instagram.com/sc.paredes?igsh=MTkzNGM3ajF2NTV4dA==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/foto 2.jpeg"><a href="https://www.instagram.com/lucedy3516" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/foto 3.jpeg"><a href="https://www.instagram.com/claudiacamposvelez?igsh=YTFuNzJzaXlrbTBw" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 4.png"><a href="https://www.instagram.com/shania_fx?igsh=ZmR5eXZvd295NjRu" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+  </div>
+  
+  <div class="final-mosaic" id="grupo-2">
+    <div class="mosaic-item"><img src="src/foto 5.jpeg"><a href="https://www.facebook.com/share/1KakiBaU4K/" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 6.png"><a href="https://www.instagram.com/milagros_b.a?igsh=MW5pczl3ZnZ2ZThlbg==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 7.png"><a href="https://www.instagram.com/emily.celis.165?igsh=MWlhc3hjZ2FnZDl2eA==" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 8.png"><a href="https://www.instagram.com/krystell_15?igsh=ajZqcmx5NWQycnd4" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+  </div>
+
+  <div class="final-mosaic" id="grupo-3">
+    <div class="mosaic-item"><img src="src/FOTO 9.png"><a href="https://www.instagram.com/karenpriscilaobregongomez?igsh=bThyMGg1eGxuMGhv" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 10.png"><a href="https://www.instagram.com/fiorecrus?igsh=c3dwcW1yYXY1ODBn" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 11.png"><a href="https://www.instagram.com/karen_carla_sc?igsh=ZXZ5cXZ5MTkwcWM=" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+    <div class="mosaic-item"><img src="src/FOTO 12.png"><a href="https://www.instagram.com/rouseee_e?igsh=bzRtdTd1OTQ4OGZz" target="_blank" class="ig-overlay"><i class="fa-brands fa-instagram"></i></a></div>
+  </div>
 </div>
-
-
 
 <div style="text-align: center; width: 100%; margin: 20px 0;">
   <h2 class="final-clientes-title" 
@@ -922,7 +1054,7 @@ nav {
 
 <section class="trabaja-box-section">
   <div class="trabaja-card">
-    <img src="src/galeria-08.jpeg" alt="Trabaja con nosotras">
+    <img src="src/FOTO 1.png" alt="Trabaja con nosotras">
     <div class="trabaja-content">
       <h2>TRABAJA CON NOSOTRAS</h2>
       <p>¿Te gustaría conocer más sobre nuestras talentosas anfitrionas en Huanuco? Estamos disponibles para responder todas tus consultas y proporcionarte información detallada sobre nuestros servicios y oportunidades. No dudes en preguntar acerca de requisitos, beneficios y cómo puedes unirte a nuestro equipo. ¡Estamos aquí para ayudarte a tomar la mejor decisión!</p>
@@ -942,12 +1074,13 @@ nav {
     <a href="#">ANFITRIONAS B</a>
   </div>
 
-  <div class="social-icons">
+<div class="social-icons">
     <a href="https://www.facebook.com/share/14ViWfy9pLK/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/lucedy3516?igsh=ZXpkeXpwNzJsZXVv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@avilavaleria8?_r=1&_t=ZS-95HR7EocB65" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     <a href="https://api.whatsapp.com/send/?phone=51954160517&text=Hola%2C+te+contacto+desde+la+web." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     <a href="mailto:vanessavalenzuela309@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-  </div>
+</div>
 
   <div class="footer-main">
     <div class="footer-logo">

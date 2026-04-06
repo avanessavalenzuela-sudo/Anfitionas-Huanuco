@@ -217,7 +217,7 @@ nav a:hover {
 }
 
 .separator::after {
-  content: "\u2666";
+  content: "\2666";
   position: absolute;
   top: -8px;
   left: 45%;
